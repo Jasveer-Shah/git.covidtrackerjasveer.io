@@ -13,7 +13,7 @@ const buildChartData = (data) => {
     }
     lastDataPoint = data.cases[date];
   }
-    return numeral(chartData).format('0,0');
+    return chartData;
 }
 
 const buildPieChartData = (data) => {

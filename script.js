@@ -201,7 +201,7 @@ const showDataOnMap = (data, casesType="cases") => {
   
 }
 
-const showDataInTable = (data) => {
+const showDataInTable = (chartData) => {
     var html = '';
     data.forEach((country)=>{
         html += `

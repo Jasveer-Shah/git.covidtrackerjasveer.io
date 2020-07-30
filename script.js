@@ -202,16 +202,19 @@ const showDataOnMap = (data, casesType="cases") => {
 }
 
 const showDataInTable = (data) => {
-  var html = '';
+    // console.log(data);
+    data.sort(function(a, b) {
+        return b.cases - a.cases;
+    });
+    var html = '';
     data.forEach((country)=>{
-      html += `
-          <tr>
-              <td class="live-flag" style="background-image: url(${country.countryInfo.flag});"></td>
-              <td>${country.country}</td>
-              <td>${numeral(country.cases).format('0,0')}</td>
-          </tr>
+        html += `
+        <tr onclick="updateDropdown('${country.countryInfo.iso2}')">
+            <td><img class="table-flag" src="${country.countryInfo.flag}" /></td>
+            <td>${country.country}</td>
+            <td>${numeral(country.cases).format('0,0')}</td>
+        </tr>
         `
     })
-
     document.getElementById('table-data').innerHTML = html;
 }

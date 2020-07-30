@@ -209,7 +209,7 @@ const showDataInTable = (data) => {
     var html = '';
     data.forEach((country)=>{
         html += `
-        <tr onclick="updateDropdown('${country.countryInfo.iso2}')">
+        <tr>
             <td><img class="table-flag" src="${country.countryInfo.flag}" /></td>
             <td>${country.country}</td>
             <td>${numeral(country.cases).format('0,0')}</td>

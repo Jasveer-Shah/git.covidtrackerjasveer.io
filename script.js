@@ -202,9 +202,6 @@ const showDataOnMap = (data, casesType="cases") => {
 }
 
 const showDataInTable = (data) => {
-      data.sort(function(a, b) {
-        return b.cases - a.cases;
-    });
   var html = '';
     data.forEach((country)=>{
       html += `

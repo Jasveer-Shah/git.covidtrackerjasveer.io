@@ -230,3 +230,13 @@ footer {
 .deaths .tab-selection{
     background-color: #FA5575;
 }
+
+::-webkit-scrollbar {
+    background-color: #F7F7F7;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.48);
+    border-radius: 8px;
+    border: solid #F7F7F7;
+}

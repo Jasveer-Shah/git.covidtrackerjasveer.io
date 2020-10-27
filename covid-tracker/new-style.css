@@ -133,6 +133,7 @@ body{
 .cnn img{
     width: 200px;
     font-size: 100%;
+    padding: 1px;
 }
 
 .cnn:hover, .directrelief-org:hover{
